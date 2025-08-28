@@ -3,16 +3,8 @@ import "../Home/mainstyle.css";
 import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slide_1 from "../assets/images/slide_1.svg";
-import slide_2 from "../assets/images/slide_2.svg";
-import slide_3 from "../assets/images/slide_3.svg";
-import slide_4 from "../assets/images/slide_4.svg";
-import slide_5 from "../assets/images/slide_5.svg";
-import slide_6 from "../assets/images/slide_6.svg";
 import Slider from "react-slick";
 import projectJson from "../../projects.json";
-
-import zaincityscape from "../assets/images/zaincityscape.svg";
 
 import "./ProjectPage.css";
 import Container from "../base/Container";
@@ -21,14 +13,7 @@ import { useLocation, useParams } from "react-router-dom";
 import ImageSlider from "../ImageSlider";
 import ProjectTag from "../ProjectTag";
 
-const slideImages = [
-  { id: 1, url: slide_1, alt: "Slide 1" },
-  { id: 2, url: slide_2, alt: "Slide 2" },
-  { id: 3, url: slide_3, alt: "Slide 3" },
-  { id: 4, url: slide_4, alt: "Slide 4" },
-  { id: 5, url: slide_5, alt: "Slide 5" },
-  { id: 6, url: slide_6, alt: "Slide 6" },
-];
+
 const ProjectPage = () => {
   const [clickedImage, setClickedImage] = useState(null);
 

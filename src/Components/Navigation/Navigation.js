@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import nav_arrow from "../assets/images/Arrow 7.svg";
+
 const Navigation = () => {
   return (
     <div className="nav">
@@ -221,6 +222,22 @@ const Navigation = () => {
                 <div className="nav_main-text-wrapper">
                   <div stagger-link-text="white" className="nav_fontsize">
                     Projects
+                  </div>
+                </div>
+                <div className="nav_main-arrow">
+                  <div className="nav-arrow w-embed">
+                    <img src={nav_arrow} alt="" />
+                  </div>
+                </div>
+              </Link>
+               <Link
+                stagger-link=""
+                to="/products"
+                className="menu-link w-inline-block"
+              >
+                <div className="nav_main-text-wrapper">
+                  <div stagger-link-text="white" className="nav_fontsize">
+                    Products
                   </div>
                 </div>
                 <div className="nav_main-arrow">

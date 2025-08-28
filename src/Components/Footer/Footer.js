@@ -112,7 +112,7 @@ const Footer = () => {
         </a>
 
         <div  className="text-2 address footer-item" style={{ flex: 1, justifyContent: 'flex-end', display: 'flex', alignItems: 'center' }}>
-          <p  className="text-2 p-small text-balance footer-item privacy-policy-ext">©2024 infinix innovations L.L.C-FZ</p>
+          <p  className="text-2 p-small text-balance footer-item privacy-policy-ext">©{new  Date().getFullYear()} infinix innovations L.L.C-FZ</p>
         </div>
 
 

@@ -31,17 +31,23 @@ function Products() {
 
                 renderDescription={() => (
                     <>
-                        <h1 style={{ marginBottom: "5orem" }} className="about-heading justify-center items-center text-center product-heading">
-                            KINETIC LED WALL
-                        </h1>
 
 
-                        <div>
-                            <div className='product-item'>
-                                <div className="product-img">
-                                    <img src={kwall1} alt="kwall 1" className='p1' />
-                                </div>
-                                <div className='product-list-info'>
+
+                        <div className='product-main'>
+
+
+                            <div className='product-header'>
+                                <h1 style={{ marginBottom: "5orem" }} className="  product-heading">
+                                    KINETIC LED WALL
+                                </h1>
+
+                            </div>
+                            <div className='product-item '>
+                                {/* <div className="product-img"> */}
+                                    <img src={kwall1} alt="kwall 1" className='p1 product-img1' />
+                                {/* </div> */}
+                                <div className='product-list-info product-list-info1'>
                                     <div className='text'>The Kinetic LED Wall is built with high-pitch LED panels that can physically
                                         extend and retract in sync with on-screen content. This kinetic motion allows
                                         infographics, visuals, and key subjects to be highlighted in striking ways, along
@@ -51,75 +57,111 @@ function Products() {
                             </div>
 
                             <div className='product-item'>
-                                <div className='product-list-info'>
+                                <div className='product-list-info product-list-info2 '>
 
                                     <h3 className='text-blue'>Interactivity Integration </h3>
-                                    <div className='text'>
-                                        The wall goes beyond visuals with seamless interactive capabilities:
-                                        <br /><br />
-                                        <span className='text-blue line-height-1-1'>Tablet Control: </span> Users can explore content,
-                                        trigger kinetic motion scenarios, or sketch patterns that
-                                        instantly animate across the wall.<br /> <br />
-                                        <span className='text-blue line-height-1-1'> LIDAR Sensors:</span>
-                                        With proximity and touch detection, the wall reacts instantly to user
-                                        presence or touch, creating a real-time interactive experience.
+                                    
+                                    <ul className='text'>
+                                        <li>The wall goes beyond visuals with seamless interactive capabilities:
+                                        </li>
+                                        <li>
+                                            <span className='text-blue line-height-1-1'>Tablet Control: </span>Users can explore content,
+                                            trigger kinetic motion scenarios, or sketch patterns that
+                                            instantly animate across the wall.
+                                        </li>
+                                        <li>
+                                            <span className='text-blue line-height-1-1'> LIDAR Sensors: </span>
+                                            With proximity and touch detection, the wall reacts instantly to user
+                                            presence or touch, creating a real-time interactive experience.
+                                        </li>
+                                    </ul>
+                                </div>
 
-                                    </div>
-                                    <div className=''>
-                                        <div className='product-img-info'>
-                                            <div className='imgs'>
+                                {/* <div className="product-img product-img2 "> */}
+                                    <img src={kwall2} alt="kwall 1" className='p2 product-img2 ' />
+                                {/* </div> */}
+
+
+                            </div>
+
+                            {/* list and button  styling*/}
+                            <div className='led-info'>
+                                <div className='led-info-lists'>
+                                    <ul>
+                                        <li className='led-info-list'>
+                                            <div className='info-img'>
                                                 <img src={pp} />
                                             </div>
-                                            <h4>Pixel Pitch: 1.9 mm</h4>
-                                        </div>
-
-                                        <div className='product-img-info'>
-                                            <div className='imgs'>
+                                            <div className='info-text'>Pixel Pitch: 1.9 mm</div>
+                                        </li>
+                                        <li className='led-info-list'>
+                                            <div className='info-img'>
                                                 <img src={cabinet} />
                                             </div>
-                                            <h4>Cabinet Size : 0.5 x 0.5 m</h4>
-                                        </div>
-
-                                        <div className='product-img-info'>
-                                            <div className='imgs'>
+                                            <div className='info-text'>Cabinet Size : 0.5 x 0.5 m</div>
+                                        </li>
+                                        <li className='led-info-list'>
+                                             <div className='info-img'>
                                                 <img src={depth} />
                                             </div>
-                                            <h4>Depth : 4.5 cm</h4>
-                                        </div>
-                                    </div>
-
+                                            <div className='info-text'>Depth : 4.5 cm</div>
+                                        </li>
+                                    </ul>
                                 </div>
+                                <div className='led-info-buttons'>
+                                    
+                                    <button type='submit'  
+                                    data-wait="Please wait..."
+                                    class="text-3 product-input product-submit-button"
+                                    onClick={handleDownload}>
+                                      <a>
+                                        3D Model  
+                                     </a>    
+                                    </button>
 
-                                <div className="product-img">
-                                    <img src={kwall2} alt="kwall 1" className='p2' />
-                                    <div className="product-buttons">
-                                        <div className='product-button btn1'>
-                                            <input
-                                                type="submit"
-                                                data-wait="Please wait..."
-                                                class="text-3 product-input product-submit-button"
-                                                value="3D Model"
-                                                onClick={handleDownload}
-                                            />
-                                        </div>
-
-                                        <div className='product-button btn2'>
-
-                                            <a
-                                                href={process.env.REACT_APP_LINKEDIN_URL}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-3 product-input product-submit-button"
-                                            >
-                                                Watch Video
-                                            </a>
-                                        </div>
-
-                                    </div>
-
+                                    <button type='submit'  
+                                    data-wait="Please wait..."
+                                    class="text-3 product-input product-submit-button"
+                                    >
+                                        <a href={process.env.REACT_APP_LINKEDIN_URL}
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                            Watch Video   
+                                        </a>   
+                                    </button>
+                                    
                                 </div>
+                                
                             </div>
+
+
+                            {/* <div className="product-buttons">
+                                <div className='product-button btn1'>
+                                    <input
+                                        type="submit"
+                                        data-wait="Please wait..."
+                                        class="text-3 product-input product-submit-button"
+                                        value="3D Model"
+                                        onClick={handleDownload}
+                                    />
+                                </div>
+
+                                <div className='product-button btn2'>
+
+                                    <a
+                                        href={process.env.REACT_APP_LINKEDIN_URL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-3 product-input product-submit-button"
+                                    >
+                                        Watch Video
+                                    </a>
+                                </div>
+
+                            </div> */}
+
                         </div>
+
 
                     </>
                 )}
